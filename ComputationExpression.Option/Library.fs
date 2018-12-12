@@ -17,8 +17,8 @@ module OptionBuilder =
 
         member this.Combine (a,b) = 
             match a with
-            | Some _ -> a  // if a is good, skip b
-            | None -> b()  // if a is bad, run b
+            | Some _ -> a
+            | None -> b()
 
         member this.Delay(f) = 
             f
